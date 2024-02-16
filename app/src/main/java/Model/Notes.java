@@ -1,5 +1,6 @@
 package Model;
 
+import javax.persistence.Entity;
 
 public class Notes {
     private int id;
