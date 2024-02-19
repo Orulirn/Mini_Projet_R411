@@ -37,13 +37,5 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    //test hibernate
-    implementation 'org.hibernate:hibernate-core:5.5.7.Final'
-    implementation 'org.hibernate:hibernate-annotations:3.5.6-Final'
-    implementation 'org.hibernate:hibernate-entitymanager:5.5.7.Final'
-    implementation 'org.hibernate:hibernate-validator:5.2.1.Final'
-    implementation 'org.hibernate:hibernate-java8:5.5.7.Final'
-    implementation 'org.hibernate:hibernate-c3p0:5.5.7.Final'
-    implementation 'org.hibernate:hibernate-envers:5.5.7.Final'
-    implementation 'org.postgresql:postgresql:42.2.24'
+
 }
