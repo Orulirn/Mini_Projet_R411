@@ -16,9 +16,9 @@ public class LesNotes {
         return monInstance;
     }
 
-    private static ArrayList<Notes> getAllNotes(){
-        //TODO
-        return new ArrayList<Notes>();
+    private ArrayList<Notes> getAllNotes(){
+        //implementation BDD si possible
+        return this.notes;
     }
 
 

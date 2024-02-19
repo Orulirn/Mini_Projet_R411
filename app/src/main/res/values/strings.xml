@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Mini_Projet_R411</string>
+    <string name="titreAddNotes">Ajouter une note</string>
+    <string name="title">Titre</string>
+    <string name="desc">Description</string>
+
 </resources>

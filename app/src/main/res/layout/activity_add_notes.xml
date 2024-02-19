@@ -4,6 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#002EFF00"
     tools:context=".AddNotes">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="@string/titreAddNotes"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <Button
+        android:id="@+id/buttonAddNote"
+        android:layout_width="81dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="314dp"
+        android:layout_marginTop="13dp"
+        android:backgroundTint="#00FFFFFF"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Ajout"
+        tools:ignore="MissingConstraints,SmallSp"
+        />
+
+
+    <Button
+        android:id="@+id/buttonBacktoMain"
+        android:layout_width="83dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="233dp"
+        android:layout_marginTop="13dp"
+        android:backgroundTint="#00FFFFFF"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,SmallSp"
+        tools:text="Retour au menu" />
+
+    <EditText
+        android:id="@+id/titreInput"
+        android:layout_width="368dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="91dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/title"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="11dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="387dp"
+        android:layout_height="556dp"
+        android:layout_marginTop="159dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="@string/desc"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="11dp" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
