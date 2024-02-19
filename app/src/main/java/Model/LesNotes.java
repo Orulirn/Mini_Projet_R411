@@ -18,8 +18,18 @@ public class LesNotes {
 
     private static ArrayList<Notes> getAllNotes(){
         //TODO
-        return new ArrayList<>();
+        return new ArrayList<Notes>();
     }
 
 
+    public ArrayList<Notes> getNotes() {
+        return notes;
+    }
+
+    public void ajoutNote(Notes note) {
+        this.notes.add(note);
+    }
+    public void setNotes(ArrayList<Notes> notes) {
+        this.notes = notes;
+    }
 }
