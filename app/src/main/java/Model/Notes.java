@@ -12,6 +12,12 @@ public class Notes {
     public Notes() {
     }
 
+    public Notes(int id, String titre, String body) {
+        this.id = id;
+        this.titre = titre;
+        this.body = body;
+    }
+
     public int getId() {
         return id;
     }
