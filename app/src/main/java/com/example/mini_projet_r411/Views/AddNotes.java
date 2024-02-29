@@ -1,4 +1,4 @@
-package com.example.mini_projet_r411;
+package com.example.mini_projet_r411.Views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,8 @@ import android.widget.NumberPicker;
 
 import Model.LesNotes;
 import Model.Notes;
+
+import com.example.mini_projet_r411.R;
 
 public class AddNotes extends AppCompatActivity {
 
