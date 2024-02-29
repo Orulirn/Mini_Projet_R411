@@ -21,6 +21,17 @@ public class LesNotes {
         return this.notes;
     }
 
+    public Notes findById(int i){
+        for(Notes n : this.notes){
+            if (n.getId() == i){
+                return n;
+            }
+        }
+        return null;
+    }
+
+
+
 
     public ArrayList<Notes> getNotes() {
         return notes;
