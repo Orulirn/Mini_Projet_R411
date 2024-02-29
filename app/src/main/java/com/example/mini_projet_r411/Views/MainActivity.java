@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
             noteList.add(new Notes(1, "Titre 1", "Contenu de la note 1"));
             noteList.add(new Notes(2, "Titre 2", "Contenu de la note 2"));
             noteList.add(new Notes(3, "Titre 3", "Contenu de la note 3"));
+
+            ln.setNotes((ArrayList<Notes>) noteList);
         } else{
             noteList = ln.getNotes();
         }
