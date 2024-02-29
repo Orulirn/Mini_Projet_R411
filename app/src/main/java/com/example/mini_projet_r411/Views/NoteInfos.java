@@ -1,14 +1,16 @@
-package com.example.mini_projet_r411;
+package com.example.mini_projet_r411.Views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class AddNotes extends AppCompatActivity {
+import com.example.mini_projet_r411.R;
+
+public class NoteInfos extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_notes);
+        setContentView(R.layout.activity_note_infos);
     }
 }

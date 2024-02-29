@@ -1,4 +1,4 @@
-package com.example.mini_projet_r411;
+package com.example.mini_projet_r411.Views;
 
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -8,11 +8,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.mini_projet_r411.R;
-
 import java.util.List;
 
-import Model.Notes;
+import com.example.mini_projet_r411.Model.Notes;
+import com.example.mini_projet_r411.R;
 
 public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewHolder> {
 

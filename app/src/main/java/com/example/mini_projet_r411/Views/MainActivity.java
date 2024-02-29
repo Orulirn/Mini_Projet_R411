@@ -1,4 +1,4 @@
-package com.example.mini_projet_r411;
+package com.example.mini_projet_r411.Views;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -10,7 +10,8 @@ import android.os.Bundle;
 import java.util.ArrayList;
 import java.util.List;
 
-import Model.Notes;
+import com.example.mini_projet_r411.Model.Notes;
+import com.example.mini_projet_r411.R;
 
 public class MainActivity extends AppCompatActivity {
 

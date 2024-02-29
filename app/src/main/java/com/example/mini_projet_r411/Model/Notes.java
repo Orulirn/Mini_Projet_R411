@@ -1,11 +1,10 @@
-package Model;
+package com.example.mini_projet_r411.Model;
 
 
 
 public class Notes {
 
     private int id;
-
     private String titre;
     private String body;
 

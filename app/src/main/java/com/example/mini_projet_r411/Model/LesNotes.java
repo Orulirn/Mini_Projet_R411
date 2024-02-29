@@ -1,4 +1,4 @@
-package Model;
+package com.example.mini_projet_r411.Model;
 
 import java.util.ArrayList;
 
