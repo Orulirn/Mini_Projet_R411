@@ -9,9 +9,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import Model.LesNotes;
-import Model.Notes;
 
+import com.example.mini_projet_r411.Model.LesNotes;
+import com.example.mini_projet_r411.Model.Notes;
 import com.example.mini_projet_r411.R;
 
 public class NoteInfos extends AppCompatActivity {
