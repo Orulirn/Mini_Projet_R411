@@ -46,12 +46,24 @@ public class NotesHandler extends SQLiteHelper{
         Cursor cursor = db.rawQuery(selectQuery,null);
         if(cursor.moveToFirst()){
             do {
-                Notes note = new Notes(Integer.parseInt(cursor.getString(0)),cursor.getString(1),cursor.getString(2));
+                String idString = cursor.getString(0);
+                int id;
+                if (idString != null) {
+                    id = Integer.parseInt(idString);
+                } else {
+                    // Gérer le cas où la valeur est null
+                    continue; // Passer à la prochaine itération de la boucle
+                }
+                String title = cursor.getString(1);
+                String body = cursor.getString(2);
+                Notes note = new Notes(id, title, body);
                 listDeNotes.add(note);
             } while (cursor.moveToNext());
         }
         return listDeNotes;
     }
+
+
 
     public int updateNotes(Notes note){
         SQLiteDatabase db = dbHelper.getWritableDatabase();

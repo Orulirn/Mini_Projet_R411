@@ -22,7 +22,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String CREATE_NOTES_TABLE = "CREATE TABLE " + TABLE_NOTE + " (" + KEY_ID + "INTEGER PRIMARY KEY," + KEY_TITlE + " TEXT," + KEY_BODY + " TEXT )";
+        String CREATE_NOTES_TABLE = "CREATE TABLE " + TABLE_NOTE + " (" + KEY_ID + " INTEGER PRIMARY KEY," + KEY_TITlE + " TEXT," + KEY_BODY + " TEXT )";
         db.execSQL(CREATE_NOTES_TABLE);
     }
 

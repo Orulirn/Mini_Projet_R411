@@ -11,6 +11,7 @@ import android.view.View;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.example.mini_projet_r411.Managers.NotesHandler;
 import com.example.mini_projet_r411.Model.LesNotes;
 import com.example.mini_projet_r411.Model.Notes;
 import com.example.mini_projet_r411.R;
@@ -29,8 +30,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        LesNotes ln = LesNotes.getInstance();
-
+        LesNotes ln = LesNotes.getInstance(this);
         if (ln.getNotes() == null){
             noteList = new ArrayList<>();
             noteList.add(new Notes(1, "Titre 1", "Contenu de la note 1"));

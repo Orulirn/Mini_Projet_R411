@@ -26,7 +26,7 @@ public class NoteInfos extends AppCompatActivity {
         Bundle b = intent.getExtras();
         int id = b.getInt("note_id");
         noteid = id;
-        LesNotes notes = LesNotes.getInstance();
+        LesNotes notes = LesNotes.getInstance(this);
         Notes n = notes.findById(id);
 
         EditText textView = findViewById(R.id.titreInput);
@@ -43,7 +43,7 @@ public class NoteInfos extends AppCompatActivity {
         EditText textView2 = (EditText)  findViewById(R.id.editTextTextMultiLine);
         String contenttitre =textView.getText().toString();
         String contentBody = textView2.getText().toString();
-        LesNotes notes = LesNotes.getInstance();
+        LesNotes notes = LesNotes.getInstance(this);
         Notes n = notes.findById(noteid);
 
         n.setTitre(contenttitre);

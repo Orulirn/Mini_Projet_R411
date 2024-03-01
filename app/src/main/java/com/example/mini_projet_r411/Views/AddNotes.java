@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.NumberPicker;
 
 
+import com.example.mini_projet_r411.Managers.NotesHandler;
 import com.example.mini_projet_r411.Model.LesNotes;
 import com.example.mini_projet_r411.Model.Notes;
 import com.example.mini_projet_r411.R;
@@ -27,8 +28,13 @@ public class AddNotes extends AppCompatActivity {
         EditText textView2 = (EditText)  findViewById(R.id.editTextTextMultiLine);
         String contenttitre =textView.getText().toString();
         String contentBody = textView2.getText().toString();
-        LesNotes lnotes = LesNotes.getInstance();
+        LesNotes lnotes = LesNotes.getInstance(view.getContext());
         Notes n = new Notes(lnotes.getNotes().size()+1, contenttitre, contentBody);
+        try {
+            int id = new NotesHandler(view.getContext()).addNotes(n);
+        }catch (Exception e){
+            System.out.println(e);
+        }
 
         lnotes.getNotes().add(n);
 
